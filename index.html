@@ -1,7 +1,64 @@
+<!-- Main HTML File -->
+
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="article.css">
+    <link rel="icon" type="image/png" href="favicon.ico" /> 
+    <title>Lemon-Tea</title>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="navbar">
+        <div class="button-container">
+            <button class="nav-btn active" data-content="content1">网站首页-服务器简介</button>
+            <button class="nav-btn" data-content="content2">服务器QQ群地址</button>
+            <button class="nav-btn" data-content="content3">服务器公告</button>
+            <button class="nav-btn" data-content="content4">服务器教程</button>
+            <button class="nav-btn" data-content="content5">服务器更新内容预告</button>
+            <button class="nav-btn" data-content="content6">服务器传奇训练家预告</button>
+            <button class="nav-btn" data-content="content7">特别鸣谢及版权声明</button>
+        </div>
+        <div class="indicator"></div>
+    </div>
+    <div class="content">
+        <div id="text-content" class="content-section">
+            <div id="content1" class="content-item">
+                这是按钮1的内容。
+            </div>
+
+            <div id="content2" class="content-item" style="display: none;">
+                这是按钮2的内容。<br />内容细节...
+            </div>
+
+            <div id="content3" class="content-item" style="display: none;">
+                这是按钮3的内容。<br />内容细节...
+            </div>
+
+            <div id="content4" class="content-item" style="display: none;">
+                这是按钮4的内容。<br />内容细节...
+            </div>
+
+            <div id="content5" class="content-item" style="display: none;">
+                这是按钮5的内容。<br />内容细节...
+            </div>
+
+            <div id="content6" class="content-item" style="display: none;">
+                这是按钮6的内容。<br />内容细节...
+            </div>
+
+            <div id="content7" class="content-item" style="display: none;">
+                <h2 class="thank-title">特别鸣谢列表</h2>
+                <h4 class="thank-subtitle">我们十分感谢他们的付出！</h4><hr />
+                <strong><p class="thank-text">游戏服务器部署-<a href="https://simpfun.cn/">简幻欢</a><br />感谢简幻欢为本公益服务器提供了免费的我的世界游戏服务器部署！<br /><br />
+                静态网页部署-<a href="https://pages.github.com/">GithubPages</a><br />感谢GithubPages为本公益服务器提供了免费的静态网页部署！<br />
+                </p></strong>
+            </div>
+        </div>
+    </div>
+    <footer class="footer"><strong><span id="timer">本网站已正常运行0天0小时0分钟0秒!</span></strong></footer>
+    <script src="script.js"></script>
 </body>
 </html>
