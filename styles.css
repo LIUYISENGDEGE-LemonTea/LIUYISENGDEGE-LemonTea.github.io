@@ -26,40 +26,30 @@ body {
 }
 
 .nav-btn {
+    position: relative;
     background: transparent;
     border: 2px solid white;
     color: white;
     padding: 10px 15px;
     cursor: pointer;
-    margin: 0 5px; 
+    margin: 0 0.3125rem;
     transition: background 0.3s;
-    position: relative;
-    z-index: 1;
 }
 
-.navbar::-webkit-scrollbar {
-    display: none; 
+.nav-btn::after {
+    content: '';
+    display: block;
+    height: 5px; 
+    background: rgba(194, 194, 194, 0.3); 
+    transition: background 0.3s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px; 
 }
 
-.navbar {
-    scrollbar-width: none; 
-}
-
-.nav-btn.active {
-    background: white;
-    color: #4eac51e9;
-}
-
-.nav-btn:hover {
-    background: rgba(255, 255, 255, 0.3);
-}
-
-.indicator {
-    height: 5px;
-    background: white;
-    margin-top: 3px;
-    position: absolute; 
-    transition: transform 0.5s, width 0.5s; 
+.nav-btn.active::after {
+    background: #dee7df; 
 }
 
 .content {
