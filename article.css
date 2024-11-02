@@ -3,3 +3,8 @@
 .thank-title , .thank-subtitle , .thank-text {
     text-align: center;
 }
+
+.authorization-images {
+    width: 112.5px;
+    height: 250px;
+}
