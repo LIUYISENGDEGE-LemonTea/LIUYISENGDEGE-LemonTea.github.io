@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lemon-Tea</title>
+    <link rel="icon" type="image/png" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/article.css">
+    <script src="./js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="./images/favicon.ico" alt="Logo" width="48" height="48" /> 
+          Lemon-Tea</div>
+        <button class="menu-toggle" aria-label="切换菜单" style="display: none;">&#9776;</button> <!-- 默认隐藏 -->
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay" style="background-image: url('./images/thanks.webp');">
+                <h1>版权声明与特别鸣谢</h1>
+                <p>本服务器的一些版权许可信息以及对所有开发者和支持者特殊道谢</p>
+            </div>
+        </section>
+        <section class="articles">
+            <!-- 文章列表将插入在这里 -->
+            <div class="article-list">
+                <a href="./article/thanks/3-authorization/index.html" class="article-item" target="_blank">
+                    <img src="./article/thanks/3-authorization/cover.webp" alt="特别鸣谢" class="article-cover" />
+                    <h1 class="article-title">授权展示</h1>
+                </a>
+                <a href="./article/thanks/2-copyright/index.html" class="article-item" target="_blank">
+                    <img src="./article/thanks/2-copyright/cover.webp" alt="特别鸣谢" class="article-cover" />
+                    <h1 class="article-title">版权说明</h1>
+                </a>
+                <a href="./article/thanks/1-thanks/index.html" class="article-item" target="_blank">
+                    <img src="./article/thanks/1-thanks/cover.webp" alt="特别鸣谢" class="article-cover" />
+                    <h1 class="article-title">特别鸣谢</h1>
+                </a>
+            </div>
+        </section>
+    </main>
+    
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <ul>
+                <li></li>
+                <li><a href="../index.html">网站首页</a></li>
+                <li><a href="./join.html">加入服务器</a></li>
+                <li><a href="./notice.html">服务器公告</a></li>
+                <li><a href="./teach.html">服务器教程</a></li>
+                <li><a href="./update.html">服务器更新内容预告</a></li>
+                <li><a href="./pokemon_master.html">赛应斯地区游客留言</a></li>
+                <li><a href="./thanks.html">版权声明与特别鸣谢</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+      <strong><span>Copyright&nbsp;&copy;
+        <script> document.write((new Date()).getFullYear());</script>&nbsp;&amp;&nbsp;<a href="../index.html">Lemon-Tea</a><br />
+        <span id="timer">本网站已正常运行0天0小时0分钟0秒!</span><script src="./js/time.js"></script>
+        </span></strong>
+    </footer>
+</body>
+</html>
