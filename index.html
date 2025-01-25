@@ -1,73 +1,74 @@
-<!-- Main HTML File -->
-
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="article.css">
-    <link rel="icon" type="image/png" href="favicon.ico" /> 
     <title>Lemon-Tea</title>
+    <link rel="icon" type="image/png" href="./static/images/favicon.ico" />
+    <link rel="stylesheet" href="./static/css/style.css">
+    <script src="./static/js/main.js" defer></script>
 </head>
 <body>
-    <div class="navbar">
-        <div class="button-container">
-            <button class="nav-btn active" data-content="content1">网站首页-服务器简介</button>
-            <button class="nav-btn" data-content="content2">服务器QQ群地址</button>
-            <button class="nav-btn" data-content="content3">服务器公告</button>
-            <button class="nav-btn" data-content="content4">服务器教程</button>
-            <button class="nav-btn" data-content="content5">服务器更新内容预告</button>
-            <button class="nav-btn" data-content="content6">服务器传奇训练家预告</button>
-            <button class="nav-btn" data-content="content7">特别鸣谢及版权声明</button>
+    <header>
+        <div class="logo"><img src="./static/images/favicon.ico" alt="Logo" width="48" height="48" /> 
+          Lemon-Tea</div>
+        <button class="menu-toggle" aria-label="切换菜单" style="display: none;">&#9776;</button> <!-- 默认隐藏 -->
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="overlay">
+                <h1>Lemon-Tea Website</h1>
+                <p>Powered by <a href="https://al2so43.github.io/website" target="_blank">Al2(SO4)3-硫酸铝</a></p>
+            </div>
+        </section>
+        <section class="hero">
+            <div class="overlay" style="background-image: url('./static/images/background/sub-background1.webp');">
+                <h2>介绍1！</h2>
+                <p>这里是Lemon-Tea服务器的官网！</p>
+            </div>
+        </section>
+        <section class="hero">
+          <div class="overlay" style="background-image: url('./static/images/background/sub-background2.webp');">
+              <h2>介绍2！</h2>
+              <p>这里是Lemon-Tea服务器的官网！</p>
+          </div>
+      </section>
+      <section class="hero">
+        <div class="overlay" style="background-image: url('./static/images/background/sub-background3.webp');">
+            <h2>介绍3！</h2>
+            <p>这里是Lemon-Tea服务器的官网！</p>
         </div>
-        <div class="indicator"></div>
-    </div>
-    <div class="content">
-        <div id="text-content" class="content-section">
-            <div id="content1" class="content-item">
-                这是按钮1的内容。
-            </div>
+    </section>
+    <section class="hero">
+      <div class="overlay" style="background-image: url('./static/images/background/sub-background4.webp');">
+          <h2>介绍4！</h2>
+          <p>这里是Lemon-Tea服务器的官网！</p>
+      </div>
+  </section>
+    </main>
 
-            <div id="content2" class="content-item" style="display: none;">
-                这是按钮2的内容。<br />内容细节...
-            </div>
-
-            <div id="content3" class="content-item" style="display: none;">
-                这是按钮3的内容。<br />内容细节...
-            </div>
-
-            <div id="content4" class="content-item" style="display: none;">
-                这是按钮4的内容。<br />内容细节...
-            </div>
-
-            <div id="content5" class="content-item" style="display: none;">
-                这是按钮5的内容。<br />内容细节...
-            </div>
-
-            <div id="content6" class="content-item" style="display: none;">
-                这是按钮6的内容。<br />内容细节...
-            </div>
-
-            <div id="content7" class="content-item" style="display: none;">
-                <hr /><h2 class="thank-title">特别鸣谢</h2>
-                <h4 class="thank-subtitle">我们十分感谢他们的帮助！</h4><hr />
-                <strong><p class="thank-text">服务器部署支持-<a href="https://simpfun.cn/" target="_blank">理之音</a><br />感谢理之音为本公益服务器提供服务器环境部署！<br /><br />
-                静态网页部署-<a href="https://pages.github.com/" target="_blank">GithubPages</a><br />感谢GithubPages为本公益服务器提供了免费的静态网页部署！<br /><br />
-                服务器Addon作者-<a href="https://mcpedl.com/user/zacek-el-serpentin/" target="_blank">Zacek el Serpentín</a><br />感谢Zacek el Serpentín授予本公益服务器汉化和使用此Addon的权利！<br /><br />
-                服务器管理人员兼Addon二次创作-<a href="mailto: leungtsunhin1008@gmail.com">Hinhin1008last，刘医生的歌？小小小房主！，不是好人但不太坏，初望星辰</a><br />（以上均为QQ用户昵称，邮箱为总联系邮箱）感谢他们的辛勤付出！<br /><br />
-                服务器官网维护兼服务器技术员-<a href="https://al2so43.github.io/website" target="_blank">Al2(SO4)3-硫酸铝</a><br />感谢Al2(SO4)3-硫酸铝为本公益服务器提供技术支持！</p></strong><hr />
-                <hr /><h2 class="thank-title">版权声明</h2>
-                <h4 class="thank-subtitle">服务器Addon版权问题相关说明</h4><hr />
-                <strong><p class="thank-text">我们服务器已经获得了Addon作者Zacek el Serpentín的准许。<a href="./files/authorization.pdf" target="_blank">查看聊天截图（PDF）。</a><br />Hinhin1008last向Addon作者Zacek el Serpentín申请后，Addon作者给予本服务器汉化和使用此Addon的权利。<br />
-                <img src="./files/authorization.jpg" alt="image" class="authorization-images" /><img src="./files/authorization0.jpg" alt="image" class="authorization-images" /><img src="./files/authorization1.jpg" alt="image" class="authorization-images" /><img src="./files/authorization2.jpg" alt="image" class="authorization-images" /></p></strong><hr />
-                <hr /><h2 class="thank-title">关于本站</h2>
-                <h4 class="thank-subtitle">本站的一些相关信息</h4><hr />
-                <strong><p class="thank-text">本站源代码所使用的开源协议：<a href="License.txt" target="_blank" >CC-BY-SA-3.0(知识共享署名-相同方式共享 3.0 国际许可协议)</a><br /></p></strong><hr />
-            </div>
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <ul>
+                <li></li>
+                <li><a href="./index.html">网站首页</a></li>
+                <li><a href="./static/join.html">加入服务器</a></li>
+                <li><a href="./static/notice.html">服务器公告</a></li>
+                <li><a href="./static/teach.html">服务器教程</a></li>
+                <li><a href="./static/update.html">服务器更新内容预告</a></li>
+                <li><a href="./static/pokemon_master.html">赛应斯地区游客留言</a></li>
+                <li><a href="./static/thanks.html">版权声明与特别鸣谢</a></li>
+            </ul>
         </div>
     </div>
-    <footer class="footer"><strong><span id="timer">本网站已正常运行0天0小时0分钟0秒!</span></strong></footer>
-    <script src="script.js"></script>
+
+    <footer>
+      <strong><span>Copyright&nbsp;&copy;
+        <script> document.write((new Date()).getFullYear());</script>&nbsp;&amp;&nbsp;<a href="./index.html">Lemon-Tea</a><br />
+        <span id="timer">本网站已正常运行0天0小时0分钟0秒!</span><script src="./static/js/time.js"></script>
+        </span></strong>
+    </footer>
 </body>
 </html>
