@@ -1,7 +1,6 @@
 var timerElement = document.getElementById('timer');
 var startDate = new Date('2025-01-25T12:00:00');
 function formatTimeUnit(timeUnit) {
-  // 将时间单位转换为两位数的格式
   return timeUnit < 10 ? '0' + timeUnit : timeUnit; 
 }
 function updateTimer() {
