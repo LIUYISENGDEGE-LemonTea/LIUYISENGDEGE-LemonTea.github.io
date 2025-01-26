@@ -26,28 +26,28 @@ document.addEventListener('DOMContentLoaded', function () {
     menuToggle.style.display = 'block';
 
     menuToggle.addEventListener('click', function () {
-        modal.style.display = 'block'; // 显示模态窗口
+        modal.style.display = 'block';
         setTimeout(() => {
-            modalContent.classList.add('show'); // 添加弹出动画
-        }, 20); // 延迟以确保显示了后再添加类
-        menuToggle.style.display = 'none'; // 隐藏按钮
+            modalContent.classList.add('show');
+        }, 20); 
+        menuToggle.style.display = 'none'; 
     });
 
     closeButton.addEventListener('click', function () {
-        modalContent.classList.remove('show'); // 移除弹出动画
+        modalContent.classList.remove('show');
         setTimeout(() => {
-            modal.style.display = 'none'; // 隐藏模态窗口
-            menuToggle.style.display = 'block'; // 显示按钮
-        }, 400); // 等待动画结束后再隐藏
+            modal.style.display = 'none'; 
+            menuToggle.style.display = 'block'; 
+        }, 400); 
     });
 
     window.addEventListener('click', function (event) {
         if (event.target === modal) {
-            modalContent.classList.remove('show'); // 移除弹出动画
+            modalContent.classList.remove('show'); 
             setTimeout(() => {
-                modal.style.display = 'none'; // 隐藏模态窗口
-                menuToggle.style.display = 'block'; // 显示按钮
-            }, 400); // 等待动画结束后再隐藏
+                modal.style.display = 'none'; 
+                menuToggle.style.display = 'block';
+            }, 400);
         }
     });
 });
