@@ -6,7 +6,7 @@
     <title>Lemon-Tea</title>
     <link rel="icon" type="image/png" href="./static/images/favicon.ico" />
     <link rel="stylesheet" href="./static/css/style.css">
-    <script src="./static/js/main.js" defer></script>
+    <script src="./static/js/button_index.js" defer></script>
     <script src="./static/js/background.js" defer></script>
 </head>
 <body>
@@ -50,19 +50,11 @@
     </main>
 
     <div class="modal" id="modal">
-        <div class="modal-content">
-            <span class="close-button">&times;</span>
-            <ul>
-                <li></li>
-                <li><a href="./index.html">网站首页</a></li>
-                <li><a href="./static/join.html">加入服务器</a></li>
-                <li><a href="./static/notice.html">服务器公告</a></li>
-                <li><a href="./static/teach.html">服务器教程</a></li>
-                <li><a href="./static/update.html">服务器更新内容预告</a></li>
-                <li><a href="./static/pokemon_master.html">赛应斯地区游客留言</a></li>
-                <li><a href="./static/thanks.html">版权声明与特别鸣谢</a></li>
-            </ul>
-        </div>
+    <div class="modal-content">
+        <span class="close-button">&times;</span>
+        <ul id="dynamic-menu">
+        </ul>
+    </div>
     </div>
 
     <footer>

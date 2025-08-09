@@ -1,0 +1,32 @@
+{
+    "menuToggle": {
+        "id": "menu-toggle",
+        "class": "menu-toggle",
+        "display": "block"
+    },
+    "modal": {
+        "id": "modal",
+        "display": "none"
+    },
+    "closeButton": {
+        "class": "close-button"
+    },
+    "modalContent": {
+        "class": "modal-content",
+        "showClass": "show"
+    },
+    "animations": {
+        "showDelay": 20,
+        "hideDelay": 400
+    },
+    "links": [
+        { "text": "", "href": "" },
+        { "text": "网站首页", "href": "../index.html" },
+        { "text": "加入服务器", "href": "./join.html" },
+        { "text": "服务器公告", "href": "./notice.html" },
+        { "text": "服务器教程", "href": "./teach.html" },
+        { "text": "服务器更新内容预告", "href": "./update.html" },
+        { "text": "赛应斯地区游客留言", "href": "./pokemon_master.html" },
+        { "text": "版权声明与特别鸣谢", "href": "./thanks.html" }
+    ]
+}
